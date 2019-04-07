@@ -1,0 +1,64 @@
+/* pages/search_result/search_result.wxss */
+
+/* 顶部搜索功能 */
+.search {
+  background-color: #e4e4e4;
+  border-radius: 30rpx;
+  /* border: 3rpx #eee solid;  */
+}
+.search icon,input {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 20rpx;
+}
+.search input {
+  width: 435rpx;
+  /* background-color: red; */
+}
+.search .search_btn {
+  line-height: 56rpx;
+  color: #fff;
+  background-color: #ff9500;
+  padding: 0 30rpx;
+  border-radius: 30rpx;
+}
+
+/* 顶部的排序 ==> 销量和价格 */
+.sale-price {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  margin: 20rpx 0;
+}
+.sale-price picker .picker {
+  padding: 10rpx 100rpx;
+}
+
+/* 底部的商品列表 */
+.good-list .good-item {
+  display: inline-block;
+  margin: 20rpx 0;
+}
+/* 奇数的商品，设置右间距 */
+.good-item:nth-child(2n+1) {
+  margin-right: 30rpx;
+}
+.good-item .good-image {
+  width: 335rpx;
+  height: 335rpx;
+}
+.good-item .title {
+  margin: 5rpx 0;
+}
+/* 底部的 价格、付款人数、“更多”图标 */
+.bottom-detail text:first-child {
+  color: #ff9500;
+}
+.bottom-detail text:not(:first-child) {
+  font-size: 27rpx;
+  margin: 0 20rpx;
+}
+.bottom-detail .more-icon {
+  width: 50rpx;
+  height: 50rpx;
+}

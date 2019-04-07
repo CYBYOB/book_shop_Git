@@ -1,0 +1,54 @@
+<!--pages/good/good.wxml-->
+<view class='page'>
+  <!-- 顶部的商品详情 -->
+  <view class='good'>
+    <view class='good_image' style="background-image:url({{good.src}})">
+      <image class='collect-icon' src='../../images/good/collect.png'></image>
+      <text>1/5</text>
+    </view>
+    <view class='good_text'>
+      <view class='price_sale'>
+        <text class='now_price'>￥{{good.now_price}}</text>
+        <text class='pre_price_all'>原价:<text class='pre_price'>{{good.pre_price}}</text></text>
+        <text class='sale_num'>网销{{good.sale_num}}本</text>
+      </view>
+      <view class='title'>{{good.name}}</view>
+    </view>
+  </view>
+
+  <!-- 小间隙 -->
+  <view class='gap'></view>
+  <!-- 公告栏 tip -->
+  <view class='tip' style='color: #666;padding: 20rpx;'>公告：昨日在耳商场小程序所有书籍均有由老综二楼昨日书屋发货，新旧程度略有不同。若有特殊要求，请扫下后备注或私发客服，谢谢理解。
+  </view>
+
+  <!-- 看看其他 -->
+  <view class='view-other'>
+    <text class='line border-top'></text>
+    <text class='text-other'>看看其他</text>
+    <text class='line border-top'></text>
+  </view>
+
+  <!-- 其他相关商品的展示列表 -->
+  <view class='good-list main-content'>
+    <block wx:for='{{good_list}}'>
+      <view class='good-item'>
+        <image class='good-image' src='{{item.src}}'></image>
+        <view class='title'>{{item.title}}</view>
+        <view class='bottom-detail'>
+          <text>￥{{item.price}}</text>
+          <text>{{item.sale}}人付款</text>
+          <image class='more-icon fr' src='../../images/search_result/more.png'></image>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <!-- 微信、电话的 悬浮图标 -->
+  <view class='phone-wechat border-all'>
+    <image class='phone border-right' src='../../images/good/phone.png'></image>
+    <image class='wechat' src='../../images/good/wechat.png'></image>
+  </view>
+  <!-- 底部购买按钮 -->
+  <button class='buy-btn'>立即购买</button>
+</view>

@@ -1,0 +1,72 @@
+/* pages/collect/collect.wxss */
+
+/* 单个收藏项的样式 */
+.collect-item {
+  display: flex;
+  align-items: center;
+  padding: 25rpx 0;
+}
+.collect-item image:first-child {
+  width: 77rpx;
+  height: 50rpx;
+}
+.collect-item .good-image {
+  width: 268rpx;
+  height: 180rpx;
+  margin: 0 20rpx;
+}
+/* 标题 */
+.collect-item .title {
+  font-size: 32rpx;
+  margin-bottom: 65rpx;
+}
+
+/* 数量的加减 按钮图标 */
+.price-num {
+  display: flex;
+  align-items: center;
+  font-size: 32rpx;
+}
+.price-num image {
+  width: 40rpx;
+  height: 40rpx;
+}
+.price-num .price {
+  color: #ff9500;
+  margin-right: 200rpx;
+}
+.price-num .num {
+  margin: 0 15rpx;
+}
+
+/* 删除按钮 */
+.delete-btn {
+  color: #FB4E4E;
+  margin: 50rpx 0 136rpx;
+  background-color: #fff;
+}
+
+/* 固定在底部的 合计、立即购买 */
+.fixed-boottom {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  align-items: center;
+  background-color: rgba(235, 235, 235, 0.8)
+}
+.fixed-boottom image:first-child {
+  width: 50rpx;
+  height: 50rpx;
+  margin: 0 25rpx;
+}
+.total {
+  margin: 0 20rpx 0 100rpx;
+}
+.total text {
+  color: #ff9500;
+}
+.fixed-boottom .buy-btn {
+  color: #fff;
+  background-color: #ff9500;
+}

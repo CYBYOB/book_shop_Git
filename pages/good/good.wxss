@@ -1,0 +1,124 @@
+/* pages/good/good.wxss */
+/* 顶部商品详情 */
+.good {
+  width: 750rpx;
+  height: 550rpx;
+  border: 1rpx #eee solid;
+}
+.good .good_image {
+  position: relative;
+  height: 400rpx;
+}
+.good_image .collect-icon {
+  position: absolute;
+  width: 50rpx;
+  height: 50rpx;
+  top: 20rpx;
+  right: 20rpx;
+}
+.good_image text {
+  position: absolute;
+  right: 20rpx;
+  bottom: 20rpx;
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 40rpx;
+  text-align: center;
+  background-color: #999;
+}
+/* 商品下面详细介绍的文字不是居左显示 */
+.good .good_text {
+  margin: 20rpx;
+}
+.price_sale .now_price {
+  color: #ff9500;
+  font-size: 50rpx;
+}
+.price_sale .pre_price_all,.sale_num {
+  color: #999;
+  font-size: 30rpx;
+}
+.price_sale .pre_price_all {  
+  margin: 0 20rpx;
+}
+.pre_price_all .pre_price {
+  text-decoration: line-through;
+}
+
+/* 公告栏 tip */
+.tip {
+  color: #666;
+  padding: 20rpx;
+  border: 1rpx #eee solid;
+}
+
+/* 下面的“看看其他” */
+.view-other {
+  text-align: center;
+}
+.view-other .line {
+  display: inline-block;
+  width: 150rpx;
+}
+.view-other .text-other {
+  vertical-align: -25%;
+  margin: 0 50rpx;
+}
+
+
+/* 其他商品的 展示列表 */
+.good-list .good-item {
+  display: inline-block;
+  margin: 20rpx 0;
+}
+/* 奇数的商品，设置右间距 */
+.good-item:nth-child(2n+1) {
+  margin-right: 30rpx;
+}
+.good-item .good-image {
+  width: 335rpx;
+  height: 335rpx;
+}
+.good-item .title {
+  margin: 15rpx 0;
+}
+/* 底部的 价格、付款人数、“更多”图标 */
+.bottom-detail text:first-child {
+  color: #ff9500;
+}
+.bottom-detail text:not(:first-child) {
+  font-size: 27rpx;
+  margin: 0 20rpx;
+}
+.bottom-detail .more-icon {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+
+
+/* 微信、电话的 悬浮图标 */
+.phone-wechat {
+  position: fixed;
+  bottom: 180rpx;
+  right: 25rpx;
+  background-color: rgba(255, 255, 255, 0.8)
+}
+.phone-wechat .phone,.wechat {
+  width: 50rpx;
+  height: 50rpx;
+  padding: 20rpx;
+}
+
+
+/* 底部固定的购买按钮 */
+.buy-btn {
+  position: fixed;
+  width: 404rpx;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  border-radius: 45rpx;
+  background-color: #ff9500;
+}

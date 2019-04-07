@@ -1,0 +1,35 @@
+<!--pages/search_result/search_result.wxml-->
+<view>
+  <!-- 顶部搜索功能 -->
+  <view class='search'>
+    <icon type='search' size='40rpx'></icon>
+    <input placeholder='请输入搜索的关键词' value='{{keyword}}' bindinput='f_keyword_input' bindconfirm='f_keyword_comfirm'></input>
+    <text class='fr search_btn' bindtap='f_keyword_comfirm'>搜索</text>
+    <view class='clear'></view>
+  </view>
+
+  <!-- 顶部的排序，销量和价格 -->
+  <view class='sale-price'>
+    <picker range='{{sale_list.range}}' value='{{sale_list.index}}' bindchange='sortChangeSale'>
+      <view class='picker'>{{sale_list.range[sale_list.index]}}</view>
+    </picker>
+    <picker range='{{price_list.range}}' value='{{price_list.index}}' bindchange='sortChangePrice'>
+       <view class='picker'>{{price_list.range[price_list.index]}}</view>
+    </picker>
+  </view>
+
+  <!-- 底部的商品列表 -->
+  <view class='good-list main-content'>
+    <block wx:for='{{good_list}}'>
+      <view class='good-item'>
+        <image class='good-image' src='{{item.src}}'></image>
+        <view class='title'>{{item.title}}</view>
+        <view class='bottom-detail'>
+          <text>￥{{item.price}}</text>
+          <text>{{item.sale}}人付款</text>
+          <image class='more-icon fr' src='../../images/search_result/more.png'></image>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

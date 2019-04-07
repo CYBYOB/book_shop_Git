@@ -1,0 +1,26 @@
+<!--pages/my_order/my_order.wxml-->
+<view class='page'>
+  <view class='main-content'>
+    <view class='order-list'>
+      <block wx:for='{{order_list}}'>
+        <!-- 单个订单 -->
+        <view class='order-item'>
+          <view class='good-detail border-bottom'>
+            <image src='{{item.src}}'></image>
+            <view class='title-price-num'>
+              <view class='title'>{{item.title}}</view>
+              <view><text>￥{{item.price}}</text><text>X{{item.num}}</text></view>
+            </view>
+            <view class='status-total'>正在运输</view>
+          </view>
+          <!-- 再来一单、催单、评价 按钮 -->
+          <view class='again-reminder-evaluate'>
+            <button>再来一单</button>
+            <button>催单</button>
+            <button>评价</button>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

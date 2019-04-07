@@ -1,0 +1,44 @@
+/**app.wxss**/
+.page {
+  /* margin: 0 30rpx; */
+}
+/* 主体内容 */
+.main-content {
+  margin: 0 25rpx;
+}
+/* 小间隔 */
+.gap {
+  width: 750rpx;
+  height: 20rpx;
+  background-color: #eee;
+}
+
+
+/* fl、fr 分别为左右浮动 */
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+/* clear默认清楚两边的浮动影响 */
+.clear {
+  clear: both;
+}
+
+/* 描边 */
+.border-top {
+  border-top: 4rpx #eee solid;
+}
+.border-bottom {
+  border-bottom: 4rpx #eee solid;
+}
+.border-left {
+  border-left: 4rpx #eee solid;
+}
+.border-right {
+  border-right: 4rpx #eee solid;
+}
+.border-all {
+  border: 4rpx #eee solid;
+}

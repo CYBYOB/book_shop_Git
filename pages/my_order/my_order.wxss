@@ -1,0 +1,23 @@
+/* pages/my_order/my_order.wxss */
+
+.order-item .good-detail {
+  display: flex;
+  align-items: center;
+  padding: 20rpx;
+}
+.good-detail image {
+  width: 150rpx;
+  height: 150rpx;
+}
+
+/* 再来一单、催单、评价 按钮 */
+.again-reminder-evaluate {
+  /* display: flex; */
+}
+.again-reminder-evaluate button {
+  display: inline-block;
+  /* padding: 0 10rpx; */
+  margin: 0 20rpx;
+  border-radius: 10rpx;
+  background-color: #fff;
+}

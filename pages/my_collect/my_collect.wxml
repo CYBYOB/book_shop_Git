@@ -1,0 +1,40 @@
+<!--pages/collect/collect.wxml-->
+<view>
+
+  <!-- 主体部分，收藏列表的渲染 -->
+  <view class='main-content'>
+    <view class='collect-list'>
+      <block wx:for='{{collect_list}}' wx:key='index'>
+        <view class='collect-item border-bottom'>
+          <image src='{{item.choose_icon}}'></image>
+          <image class='good-image' src='{{item.src}}'></image>
+          <!-- 右边详细的文字内容 -->
+          <view class='right-detail'>
+            <!-- 标题 -->
+            <view class='title'>{{item.title}}</view>
+            <!-- 价格 和 数量 -->
+            <view class='price-num'>
+              <text class='price'>￥{{item.price}}</text>
+              <image src='../../images/common/minus.png'></image>
+              <text class='num'>{{item.num}}</text>
+              <image src='../../images/common/add.png'></image>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <!-- 删除按钮 -->
+  <button class='delete-btn'>删除</button>
+
+  <!-- 固定在底部的 合计、立即购买 -->
+  <view class='fixed-boottom'>
+    <!-- 应该用的是 联动技术！！暂时简单化 -->
+    <image src='../../images/my_collect/choose.png'></image>
+    <text>全选</text>
+    <text class='total'>合计:<text>￥000.00</text></text>
+    <!-- 立即购买按钮 -->
+    <button class='buy-btn'>立即购买</button>
+  </view>
+</view>

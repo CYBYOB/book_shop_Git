@@ -1,0 +1,19 @@
+/* pages/point_map/point_map.wxss */
+
+.point_item {
+  width: 400rpx;
+  height: 400rpx;
+  border-radius: 200rpx;
+  margin: 50rpx;
+  text-align: center;
+  background-color: #ff9500;
+}
+.point_item .title,.score {
+  color: #fff;
+}
+.point_item .title {
+  padding: 120rpx 100rpx 0 100rpx;
+}
+.point_item .score {
+  font-size: 80rpx;
+}

@@ -1,0 +1,12 @@
+<!--pages/point_map/point_map.wxml-->
+<view class='page'>
+  <!-- 内容主体 -->
+  <view class='point_list'>
+    <block wx:for='{{point_list}}'>
+      <view class='point_item'>
+        <view class='title'>{{item.title}}</view>
+        <view class='score'>+{{item.score}}</view>
+      </view>
+    </block>
+  </view>
+</view>
